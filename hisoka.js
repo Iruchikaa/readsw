@@ -1,6 +1,6 @@
 import 'dotenv/config';
 
-import makeWASocket, { delay, useMultiFileAuthState, fetchLatestWaWebVersion, makeInMemoryStore, jidNormalizedUser, PHONENUMBER_MCC, DisconnectReason, Browsers, makeCacheableSignalKeyStore } from '@whiskeysockets/baileys';
+import makeWASocket, { delay, useMultiFileAuthState, fetchLatestBaileysVersion, makeInMemoryStore, jidNormalizedUser, PHONENUMBER_MCC, DisconnectReason, Browsers, makeCacheableSignalKeyStore } from '@whiskeysockets/baileys';
 import pino from 'pino';
 import { Boom } from '@hapi/boom';
 import fs from 'fs';
@@ -24,7 +24,7 @@ const pathMetadata = `./${process.env.SESSION_NAME}/groupMetadata.json`;
 
 const startSock = async () => {
 	const { state, saveCreds } = await useMultiFileAuthState(`./${process.env.SESSION_NAME}`);
-	const { version, isLatest } = await fetchLatestWaWebVersion();
+	const { version, isLatest } = await fetchLatestBaileysVersion();
 
 	console.log(`using WA v${version.join('.')}, isLatest: ${isLatest}`);
 
