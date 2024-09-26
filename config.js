@@ -34,7 +34,7 @@ export default {
    PAIRING_NUMBER: "",
 
    // nomor owner untuk penggunaan command khusus owner
-   OWNER: ["6288292024190", "62858156631709"],
+   OWNER: ["62××××××", "62××××××"],
 
    // untuk size auto restart, RAM sisa 350MB auto restart
    AUTO_RESTART: "350 MB",
@@ -43,12 +43,12 @@ export default {
    SELF: true,
 
    // session name
-   SESSION_NAME: "session",
+   SESSION_NAME: "auth",
 
    // Exif Sticker
    Exif: {
       packName: "Sticker Dibuat Oleh : ",
-      packPublish: "Dika Ardianta"
+      packPublish: "Iruchikaa"
    },
 
    PREFIX: /^\p{Extended_Pictographic}|^[°•π÷×¶∆£¢€¥®™+✓=|/~!?@#%^&.©^]/,
